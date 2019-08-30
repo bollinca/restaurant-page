@@ -1,0 +1,1 @@
+A mockup of a restaurant page. Initially made to familiarize myself with webpack and modules.
