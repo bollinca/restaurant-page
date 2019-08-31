@@ -90,10 +90,23 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("alert('Webpack functioning');\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-html.js */ \"./src/load-html.js\");\n\nObject(_load_html_js__WEBPACK_IMPORTED_MODULE_0__[\"loadPage\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/load-html.js":
+/*!**************************!*\
+  !*** ./src/load-html.js ***!
+  \**************************/
+/*! exports provided: loadPage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loadPage\", function() { return loadPage; });\n\nconst loadPage = () => {\n    const container = document.querySelector('#content');\n\n    const headline = document.createElement('h1');\n    const breadPhoto = document.createElement('img');\n    const shopBio = document.createElement('p');\n\n    headline.textContent = 'Welcome to the Bakery';\n    breadPhoto.setAttribute('src', 'https://www.homemadefoodjunkie.com/wp-content/uploads/2017/11/IMG_1354-735x490.jpg');\n    breadPhoto.setAttribute('alt', 'A picture of fresh sourdough bread');\n    shopBio.textContent = 'Each day, we bake fresh, high-quality, hand-crafted artisan bread';\n\n    container.appendChild(headline);\n    container.appendChild(breadPhoto);\n    container.appendChild(shopBio);\n}\n\n\n\n//# sourceURL=webpack:///./src/load-html.js?");
 
 /***/ })
 
