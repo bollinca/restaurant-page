@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/contact-tab.js":
+/*!****************************!*\
+  !*** ./src/contact-tab.js ***!
+  \****************************/
+/*! exports provided: createContact */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createContact\", function() { return createContact; });\nconst createContact = () => {\n    const container = document.querySelector('#content');\n\n    const contactDiv = document.createElement('div');\n    const contactHeader = document.createElement('h2');\n    const bulkParagraph = document.createElement('p');\n    const helpParagraph = document.createElement('p');\n    const formHeader = document.createElement('h3');\n    const contactForm = document.createElement('form');\n\n    contactHeader.textContent = 'CONTACT INFORMATION';\n    bulkParagraph.textContent = 'For bulk order inqueries, please call (555) 555-5555, or email us at fakeemail@fake.com';\n    helpParagraph.textContent = 'Have questions about baking your own bread? Looking for some help with your yeast starter? Stop by and we\\'ll be happy to help.';\n    formHeader.textContent = 'Other questions/feedback?';\n\n    contactDiv.appendChild(contactHeader);\n    contactDiv.appendChild(bulkParagraph);\n    contactDiv.appendChild(helpParagraph);\n    contactDiv.appendChild(formHeader);\n    contactDiv.appendChild(contactForm);\n\n    container.appendChild(contactDiv);\n};\n\n\n\n//# sourceURL=webpack:///./src/contact-tab.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-html.js */ \"./src/load-html.js\");\n\nObject(_load_html_js__WEBPACK_IMPORTED_MODULE_0__[\"loadPage\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-html.js */ \"./src/load-html.js\");\n/* harmony import */ var _contact_tab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-tab.js */ \"./src/contact-tab.js\");\n\n\n\nObject(_load_html_js__WEBPACK_IMPORTED_MODULE_0__[\"loadPage\"])();\nObject(_contact_tab_js__WEBPACK_IMPORTED_MODULE_1__[\"createContact\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
