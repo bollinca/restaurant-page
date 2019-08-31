@@ -9,7 +9,7 @@ const createContact = () => {
     const contactForm = document.createElement('form');
 
     contactHeader.textContent = 'CONTACT INFORMATION';
-    bulkParagraph.textContent = 'For bulk order inqueries, please call (555) 555-5555, or email us at fakeemail@fake.com';
+    bulkParagraph.textContent = 'For bulk order inqueries, please call (555) 867-5309, or email us at fakeemail@fake.com';
     helpParagraph.textContent = 'Have questions about baking your own bread? Looking for some help with your yeast starter? Stop by and we\'ll be happy to help.';
     formHeader.textContent = 'Other questions/feedback?';
 
