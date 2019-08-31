@@ -118,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-html.js */ \"./src/load-html.js\");\n/* harmony import */ var _contact_tab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-tab.js */ \"./src/contact-tab.js\");\n/* harmony import */ var _about_tab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about-tab.js */ \"./src/about-tab.js\");\n\n\n\n\nObject(_load_html_js__WEBPACK_IMPORTED_MODULE_0__[\"loadPage\"])();\nObject(_contact_tab_js__WEBPACK_IMPORTED_MODULE_1__[\"createContact\"])();\nObject(_about_tab_js__WEBPACK_IMPORTED_MODULE_2__[\"createAbout\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _load_html_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./load-html.js */ \"./src/load-html.js\");\n/* harmony import */ var _contact_tab_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact-tab.js */ \"./src/contact-tab.js\");\n/* harmony import */ var _about_tab_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about-tab.js */ \"./src/about-tab.js\");\n/* harmony import */ var _menu_tab_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./menu-tab.js */ \"./src/menu-tab.js\");\n\n\n\n\n\nObject(_load_html_js__WEBPACK_IMPORTED_MODULE_0__[\"loadPage\"])();\nObject(_contact_tab_js__WEBPACK_IMPORTED_MODULE_1__[\"createContact\"])();\nObject(_about_tab_js__WEBPACK_IMPORTED_MODULE_2__[\"createAbout\"])();\nObject(_menu_tab_js__WEBPACK_IMPORTED_MODULE_3__[\"createMenu\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -131,6 +131,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _loa
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"loadPage\", function() { return loadPage; });\n\nconst loadPage = () => {\n    const container = document.querySelector('#content');\n\n    const headline = document.createElement('h1');\n    const breadPhoto = document.createElement('img');\n    const shopBio = document.createElement('p');\n\n    headline.textContent = 'Welcome to the Bakery';\n    breadPhoto.setAttribute('src', 'https://www.homemadefoodjunkie.com/wp-content/uploads/2017/11/IMG_1354-735x490.jpg');\n    breadPhoto.setAttribute('alt', 'A picture of fresh sourdough bread');\n    shopBio.textContent = 'Each day, we bake fresh, high-quality, hand-crafted artisan bread';\n\n    container.appendChild(headline);\n    container.appendChild(breadPhoto);\n    container.appendChild(shopBio);\n}\n\n\n\n//# sourceURL=webpack:///./src/load-html.js?");
+
+/***/ }),
+
+/***/ "./src/menu-tab.js":
+/*!*************************!*\
+  !*** ./src/menu-tab.js ***!
+  \*************************/
+/*! exports provided: createMenu */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"createMenu\", function() { return createMenu; });\nconst createMenu = () => {\n    const container = document.querySelector('#content');\n\n    const menuDiv = document.createElement('div');\n    const menuHeadline = document.createElement('h2');\n    const menuList = document.createElement('ul');\n    const itemOne = document.createElement('li');\n\n    menuHeadline.textContent = 'Check out all our bread!!!';\n    itemOne.textContent = 'This list will have more items.'\n\n\n    menuList.appendChild(itemOne);\n\n    menuDiv.appendChild(menuHeadline);\n    menuDiv.appendChild(menuList);\n\n    container.appendChild(menuDiv);\n}\n\n\n\n//# sourceURL=webpack:///./src/menu-tab.js?");
 
 /***/ })
 
