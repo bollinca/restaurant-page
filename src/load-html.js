@@ -16,4 +16,25 @@ const loadPage = () => {
     container.appendChild(shopBio);
 }
 
-export { loadPage };
+const makeTabSelector = () => {
+    const container = document.querySelector('#content');
+    const tabContainer = document.createElement('div');
+    tabContainer.id = 'tab-container';
+    const tabHome = document.createElement('div');
+    tabHome.classList.add('tab');
+    const tabAbout = document.createElement('div');
+    tabAbout.classList.add('tab');
+    const tabMenu = document.createElement('div');
+    tabMenu.classList.add('tab');
+    const tabContact = document.createElement('div');
+    tabContact.classList.add('tab');
+
+    tabContainer.appendChild(tabHome);
+    tabContainer.appendChild(tabAbout);
+    tabContainer.appendChild(tabMenu);
+    tabContainer.appendChild(tabContact);
+
+    container.appendChild(tabContainer);
+}
+
+export { loadPage, makeTabSelector };

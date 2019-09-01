@@ -1,0 +1,13 @@
+#tab-container {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+}
+
+.tab {
+    display: inline-block;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
