@@ -24,6 +24,10 @@
     color: white;
 }
 
+.tab.selected {
+    background-color: red;
+}
+
 #content {
     width: 75vw;    
     margin: 0 auto;

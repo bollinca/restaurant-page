@@ -24,6 +24,8 @@ tabs.forEach(tab => tab.addEventListener('click', (e) => {
             createMenu();
             break;
     }
+    tabs.forEach(tab => tab.classList.remove('selected'));
+    e.target.classList.add('selected');
 }))
 loadPage();
 // createContact();
