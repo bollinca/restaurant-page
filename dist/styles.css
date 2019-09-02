@@ -3,32 +3,38 @@
 }
 
 #tab-container {
-    background-color: red;
     display: grid;
     width: 75vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 45px;
     padding: 0;
-    margin: 0 auto;
+    margin: 60px auto 0px auto;
 }
 
 .tab {
-    background-color: blue;
+    background-color: black;
     width: 1fr;
     height: 1fr;
-    border: 1px solid black;
+    border: 1px solid white;
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
     text-align: center;
     padding: 8px 0;
     font-size: 24px;
+    color: white;
 }
 
 #content {
-    width: 75vw;
+    width: 75vw;    
     margin: 0 auto;
     background-color: gray;
+    padding: 25px 25px;
 }
 
 img {
     width: 50%;
+}
+
+h1 {
+    margin-top: 0;
 }

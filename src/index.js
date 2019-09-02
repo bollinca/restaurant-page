@@ -5,6 +5,6 @@ import { createMenu } from './menu-tab.js';
 
 makeTabSelector();
 loadPage();
-createContact();
-createAbout();
-createMenu();
+// createContact();
+// createAbout();
+// createMenu();
