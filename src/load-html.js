@@ -23,7 +23,7 @@ const makeTabSelector = () => {
     tabContainer.id = 'tab-container';
 
     const tabHome = document.createElement('div');
-    tabHome.classList.add('tab');
+    tabHome.classList.add('tab', 'selected');
     tabHome.textContent = 'Home';
     tabHome.setAttribute('data-trigger', 'loadPage');
 
