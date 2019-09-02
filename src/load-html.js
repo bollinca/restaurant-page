@@ -9,7 +9,8 @@ const loadPage = () => {
     headline.textContent = 'Welcome to the Bakery';
     breadPhoto.setAttribute('src', 'https://www.homemadefoodjunkie.com/wp-content/uploads/2017/11/IMG_1354-735x490.jpg');
     breadPhoto.setAttribute('alt', 'A picture of fresh sourdough bread');
-    shopBio.textContent = 'Each day, we bake fresh, high-quality, hand-crafted artisan bread';
+    shopBio.textContent = 'Every morning, we bake fresh, high-quality, hand-crafted artisan bread';
+    shopBio.style.textAlign = 'center'
 
     container.appendChild(headline);
     container.appendChild(breadPhoto);
