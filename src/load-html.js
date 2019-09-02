@@ -18,23 +18,28 @@ const loadPage = () => {
 
 const makeTabSelector = () => {
     const container = document.querySelector('#content');
+    const main = document.querySelector('main');
     const tabContainer = document.createElement('div');
     tabContainer.id = 'tab-container';
     const tabHome = document.createElement('div');
     tabHome.classList.add('tab');
+    tabHome.textContent = 'Home';
     const tabAbout = document.createElement('div');
     tabAbout.classList.add('tab');
+    tabAbout.textContent = 'About Us';
     const tabMenu = document.createElement('div');
     tabMenu.classList.add('tab');
+    tabMenu.textContent = 'Menu';
     const tabContact = document.createElement('div');
     tabContact.classList.add('tab');
+    tabContact.textContent = 'Contact Us';
 
     tabContainer.appendChild(tabHome);
     tabContainer.appendChild(tabAbout);
     tabContainer.appendChild(tabMenu);
     tabContainer.appendChild(tabContact);
 
-    container.appendChild(tabContainer);
+    main.insertBefore(tabContainer, main.firstChild);
 }
 
 export { loadPage, makeTabSelector };
