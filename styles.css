@@ -32,13 +32,13 @@
     width: 75vw;
     min-height: 75vh;
     margin: 0 auto;
-    background-color: gray;
-    padding: 25px 25px;
+    background-color: rgb(187, 187, 187);
+    padding: 25px 25px 50px 25px;
 }
 
 img {
     width: 50%;
-    margin: 0 25%;
+    margin: 0 25% 20px 25%;
     border-radius: 25px;
 }
 
@@ -46,7 +46,7 @@ h1 {
     margin-top: 0;
 }
 
-h1, h2 {
+h1, h2, h3{
     font-size: 36px;
     text-align: center;
 }
@@ -54,4 +54,25 @@ h1, h2 {
 p, li {
     font-size: 24px;
     margin: 1em 10%;
+}
+
+form {
+    border: 5px black solid;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input, textarea, button {
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+    line-height: 26px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
+    word-wrap: break-word;
+    padding: 10px;
 }
