@@ -9,7 +9,21 @@ tabs.forEach(tab => tab.addEventListener('click', (e) => {
     while (container.firstChild) {
         container.removeChild(container.firstChild);
     }
-    console.log(e.target.attributes['data-trigger']);
+    let targetFunctionName = e.target.attributes['data-trigger'].value;
+    switch(targetFunctionName) {
+        case 'loadPage':
+            loadPage();
+            break;
+        case 'createContact':
+            createContact();
+            break;
+        case 'createAbout':
+            createAbout();
+            break;
+        case 'createMenu':
+            createMenu();
+            break;
+    }
 }))
 loadPage();
 // createContact();
