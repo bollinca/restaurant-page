@@ -25,18 +25,22 @@ const makeTabSelector = () => {
     const tabHome = document.createElement('div');
     tabHome.classList.add('tab');
     tabHome.textContent = 'Home';
+    tabHome.setAttribute('data-trigger', 'loadPage');
 
     const tabAbout = document.createElement('div');
     tabAbout.classList.add('tab');
     tabAbout.textContent = 'About Us';
+    tabAbout.setAttribute('data-trigger', 'createAbout');
 
     const tabMenu = document.createElement('div');
     tabMenu.classList.add('tab');
     tabMenu.textContent = 'Menu';
-    
+    tabMenu.setAttribute('data-trigger', 'createMenu');
+
     const tabContact = document.createElement('div');
     tabContact.classList.add('tab');
     tabContact.textContent = 'Contact Us';
+    tabContact.setAttribute('data-trigger', 'createContact');
 
     tabContainer.appendChild(tabHome);
     tabContainer.appendChild(tabAbout);
@@ -44,6 +48,7 @@ const makeTabSelector = () => {
     tabContainer.appendChild(tabContact);
 
     main.insertBefore(tabContainer, main.firstChild);
+    return [ tabHome, tabAbout, tabMenu, tabContact ];
 }
 
 export { loadPage, makeTabSelector };
